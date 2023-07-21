@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create CODE FREE </title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      transform: translateY(-90px);
+      font-size: 54px;
+      margin-bottom: 30px;
+    }
+     #timecode {
+      transform: translateY(-35px);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    #displayButton1 {
+      transform: translate(-10px,-20px);
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000000;
+      color: #fff;
+      cursor: pointer;
+    }
+    #displayButton2 {
+      transform: translate(10px,-20px);
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000000;
+      color: #fff;
+      cursor: pointer;
+    }
+    #downloadapk {
+      transform: translate(0px,20px);
+      padding: 10px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00ff00;
+      color: #000000;
+      cursor: pointer;
+    }
+    #help {
+      transform: translateY(50px);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    #youtube {
+      transform: translate(-15px,80px);
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    #telegram {
+      transform: translate(15px,80px);
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    #displayText {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    #dvlp {
+      transform: translateY(140px);
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1>TPX BOT</h1>
+    <h1 id="timecode">يمكنك الحصول على كود مدتة اكثر من اربع ساعات من كل زر والانتظار ساعة واحدة للحصول على المزيد من الاكواد</h1>
+    <button id="displayButton1" onclick="displayBun1()">Get Code 1</button>
+    <button id="displayButton2" onclick="displayrunn2()">Get Code 2</button>
+    <button id="downloadapk" onclick="downloadbot()">Download BOT APK</button>
+    <p id="displayText" onclick="copyText()" style="display: none;"></p>
+    <h1 id="help">Developer accounts</h1>
+    <button id="youtube" onclick="openYouTube()">YouTube</button>
+    <button id="telegram" onclick="openTelegram()">Telegram</button>
+    <h1 id="dvlp">TOP FIRE: تم تطوير البوت من قبل</h1>
+  </div>
+
+  <script>
+    function openYouTube() {
+      window.open("https://youtube.com/@topfire383");
+    }
+
+    function openTelegram() {
+      window.open("https://t.me/topfire5");
+    }
+
+
+    function downloadbot() {
+      window.open("https://www.mediafire.com/file/xs0qwn62zeuf5cq/TPX_BOT-FREE.apk/file");
+    }
+    
+    
+    
+    
+    
+        
+    function timenow(){
+
+const now = new Date();
+
+  const year = now.getFullYear();
+const month = String(now.getMonth() + 1).padStart(2, '0');
+const day = String(now.getDate()).padStart(2, '0');
+const hour = String(now.getHours()).padStart(2, '0');
+const minutes = String(now.getMinutes()).padStart(2, '0');
+
+const nowe = `${year}-${month}-${day} ${hour}:${minutes}`;
+console.log(nowe);
+  const nextnow = new Date(nowe);
+  return nowe;
+
+}
+
+
+
+
+function timef(){
+
+        const now = new Date();
+
+
+
+const nextMonth = new Date(now.getTime() + 2 * 60 * 60 * 1000);
+
+const year2 = nextMonth.getFullYear();
+const month2 = String(nextMonth.getMonth() + 1).padStart(2, '0');
+const day2 = String(nextMonth.getDate()).padStart(2, '0');
+const hour2 = String(nextMonth.getHours()).padStart(2, '0');
+const minutes2 = String(nextMonth.getMinutes()).padStart(2, '0');
+
+const nextMonthe = `${year2}-${month2}-${day2} ${hour2}:${minutes2}`;
+console.log(nextMonthe);
+return nextMonthe;
+
+}
+
+
+function setCookie(cookieName, cookieValue, expirationDays) {
+  var expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + expirationDays);
+  var cookieString = cookieName + "=" + cookieValue + "; expires=" + expirationDate.toUTCString() + "; path=/";
+  document.cookie = cookieString;
+}
+
+
+
+
+
+
+
+
+function getCookieValue(cookieName) {
+  var name = cookieName + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var cookieArray = decodedCookie.split(';');
+
+  for (var i = 0; i < cookieArray.length; i++) {
+    var cookie = cookieArray[i].trim();
+
+    if (cookie.indexOf(name) === 0) {
+      return cookie.substring(name.length, cookie.length);
+    }
+  }
+
+  return null;
+}
+
+
+
+
+function displayBun1(){
+ var runcode1 = getCookieValue("runcode1")
+ var timenowe = timenow();
+ const timewa = new Date(timenowe);
+ var timeletr = timef()
+ 
+ var button = document.getElementById("displayButton1");
+
+
+ if (runcode1) {
+ 
+ const nextnow1 = new Date(runcode1);
+ 
+
+ 
+ 
+ if (timewa > nextnow1){
+ 
+ setCookie("runcode1", timeletr);
+ 
+ window.open("https://short-jambo.com/codefreetop");
+ 
+ 
+ //goo
+ 
+ 
+ 
+ 
+ 
+ }else{
+ 
+
+ button.innerHTML = "Please wait 1hour";
+ 
+ 
+ }
+ }else{
+ 
+ 
+ setCookie("runcode1", timeletr);
+ window.open("https://short-jambo.com/codefreetop");
+
+ 
+// gooo
+
+ 
+ 
+ }
+
+
+}
+
+
+
+
+
+
+function displayrunn2(){
+ var runcode2 = getCookieValue("runcode2")
+ var timenowe = timenow();
+ const timewa = new Date(timenowe);
+ var timeletr = timef()
+ 
+ var button = document.getElementById("displayButton2");
+
+
+ if (runcode2) {
+ 
+ const nextnow2 = new Date(runcode2);
+ 
+
+ 
+ 
+ if (timewa > nextnow2){
+ 
+ setCookie("runcode2", timeletr);
+ 
+window.open("https://short-jambo.com/freecode1");
+ 
+ 
+ //goo
+ 
+ 
+ 
+ 
+ 
+ }else{
+ 
+ 
+ button.innerHTML = "Please wait 1hour";
+ 
+
+//falss
+ 
+ 
+ 
+ }
+ }else{
+ 
+ 
+ setCookie("runcode2", timeletr);
+ 
+window.open("https://short-jambo.com/freecode1");
+ 
+// gooo
+
+ 
+ 
+ }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+  </script>
+</body>
+</html>
+

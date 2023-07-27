@@ -95,7 +95,7 @@
 <body>
   <div class="container">
     <h1>TPX BOT</h1>
-    <h1 id="timecode">يمكنك الحصول على كود مدتة اكثر من اربع ساعات من كل زر والانتظار ساعة واحدة للحصول على المزيد من الاكواد</h1>
+    <h1 id="timecode">تم إيقاف البوت مؤقتا توجه الي قناه التلجرام لمعرفة التفاصيل</h1>
     <button id="displayButton1" onclick="displayBun1()">Get Code 1</button>
     <button id="displayButton2" onclick="displayrunn2()">Get Code 2</button>
     <button id="downloadapk" onclick="downloadbot()">Download BOT APK</button>
@@ -217,9 +217,12 @@ function displayBun1(){
  
  if (timewa > nextnow1){
  
- setCookie("runcode1", timeletr);
+ //setCookie("runcode1", timeletr);
  
- window.open("https://short-jambo.com/codefreetop");
+ button.innerHTML = "Please wait...";
+ 
+ 
+// window.open("https://short-jambo.com/codefreetop");
  
  
  //goo
@@ -231,17 +234,20 @@ function displayBun1(){
  }else{
  
 
- button.innerHTML = "Please wait 1hour";
+ button.innerHTML = "Please wait...";
  
  
  }
  }else{
  
  
- setCookie("runcode1", timeletr);
- window.open("https://short-jambo.com/codefreetop");
+// setCookie("runcode1", timeletr);
+// window.open("https://short-jambo.com/codefreetop");
 
- 
+
+  button.innerHTML = "Please wait...";
+  
+  
 // gooo
 
  
@@ -274,9 +280,11 @@ function displayrunn2(){
  
  if (timewa > nextnow2){
  
- setCookie("runcode2", timeletr);
- 
-window.open("https://short-jambo.com/freecode1");
+ //setCookie("runcode2", timeletr);
+
+button.innerHTML = "Please wait...";
+
+//window.open("https://short-jambo.com/freecode1");
  
  
  //goo
@@ -288,7 +296,7 @@ window.open("https://short-jambo.com/freecode1");
  }else{
  
  
- button.innerHTML = "Please wait 1hour";
+ button.innerHTML = "Please wait...";
  
 
 //falss
@@ -298,10 +306,14 @@ window.open("https://short-jambo.com/freecode1");
  }
  }else{
  
+
+button.innerHTML = "Please wait...";
+
+
  
- setCookie("runcode2", timeletr);
+// setCookie("runcode2", timeletr);
  
-window.open("https://short-jambo.com/freecode1");
+//window.open("https://short-jambo.com/freecode1");
  
 // gooo
 
@@ -322,4 +334,3 @@ window.open("https://short-jambo.com/freecode1");
   </script>
 </body>
 </html>
-
